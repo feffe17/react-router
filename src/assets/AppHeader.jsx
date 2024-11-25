@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar"
+
 export default function AppHeader() {
 
     const title = "Il mio blog"
@@ -5,6 +7,7 @@ export default function AppHeader() {
         <header>
             <div className="title">
                 <h1>{title}</h1>
+                <Navbar />
             </div>
         </header>
     )

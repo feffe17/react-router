@@ -22,10 +22,19 @@ header {
   background-color: var(--c-primary);
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 main {
   margin-top: 1rem;
   position: relative;
   width: 100%;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 .addBtn {

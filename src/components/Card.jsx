@@ -1,7 +1,7 @@
-// src/components/Card.jsx
 import style from "./Card.module.css";
+import { Link } from "react-router-dom";
 
-export default function Card({ title, description, buttonText, image, tags }) {
+export default function Card({ title, description, buttonText, image, tags, link }) {
     return (
         <div className={style.card}>
             <div className={style.topSection}>
@@ -15,7 +15,7 @@ export default function Card({ title, description, buttonText, image, tags }) {
                         <span key={index} className={`${style.tag} ${style[tag]}`}>{tag}</span>
                     ))}
                 </div>
-                <button className={style.button}>{buttonText}</button>
+                <Link to={link} className={style.button}>{buttonText}</Link> {/* Usa il link */}
             </div>
         </div>
     );

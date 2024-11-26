@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
     const [posts, setPosts] = useState([]);
@@ -175,6 +176,7 @@ export default function Blog() {
                         image={post.image || "https://placehold.co/600x400"}
                         tags={post.tags}
                         buttonText="Leggi di più"
+                        link={`/blog/${post.id}`}
                     />
                 ))}
             </div>

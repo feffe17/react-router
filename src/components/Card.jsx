@@ -15,7 +15,9 @@ export default function Card({ title, description, buttonText, image, tags, link
                         <span key={index} className={`${style.tag} ${style[tag]}`}>{tag}</span>
                     ))}
                 </div>
-                <Link to={link} className={style.button}>{buttonText}</Link> {/* Usa il link */}
+                <Link to={link}>
+                    <button className={style.button}>{buttonText}</button>
+                </Link>
             </div>
         </div>
     );

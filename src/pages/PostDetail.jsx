@@ -11,7 +11,7 @@ export default function PostDetail() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get(`http://127.0.0.1:3003/posts/${id}`);
+                const response = await axios.get(`http://127.0.0.1:3003/posts/id/${id}`);
                 setPost(response.data);
             } catch (err) {
                 console.error("Errore durante il caricamento del post:", err);
